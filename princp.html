@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Cuenta Regresiva - feliz!navidad</title>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/princ.css">
+</head>
+<body>
+	
+	<div class="portada" id="portada">
+		<div class="header">
+			<h1 class="logotipo">Navidad</h1>
+			<p class="mensaje">Conteo para  la  navidad que se aproxima!</p>
+			<p class="button-container"><a id="mirar" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">se aproxima!</a>	</p>
+		</div>
+
+		<div id="cuenta"></div>
+
+		<div class="redes-sociales">
+			<a href="https://web.facebook.com/fcu.marin?locale=es_LA" class="btn-red-social"><i class="fab fa-facebook-f"></i></a>
+
+			<a href="https://www.instagram.com/facuxflyx/" class="btn-red-social"><i class="fab fa-instagram"></i></a>
+			
+
+		</div>
+
+	</div>
+
+    <main class="main-container">
+        <h1 class="title">¡feliz navidad señores pasenlo bien y disfruten estas navidades! </h1>
+		<p class="button-container"><a id="play" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">demosle color!:)</a>	</p>
+	
+	</main>
+    
+	<div class="snow-floor"></div>
+
+	
+	
+
+
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./js/simplyCountdown.min.js"></script>
+	<script src="./js/countdown.js"></script>
+	<script>
+		let play = document.getElementById("play");
+		let mirar = document.getElementById("mirar");
+	  
+		let audio1 = new Audio("music/feliz.mp3");
+		
+	  
+		function reproducir(audio) {
+		  audio.play();
+		}
+	  
+		play.addEventListener("click", function () {
+		  reproducir(audio1);
+		// Pausa la otra canción si se está reproduciendo
+		});
+	  
+		
+	  
+		// Cambiar la música después de que una termine
+		
+	  
+		
+		
+	  </script>
+	  
+	
+	  
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
